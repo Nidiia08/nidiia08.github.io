@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página informativa sobre el sistema operativo Fedora.">
+    <title>Fedora - Sistema Operativo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Fedora - Sistema Operativo</h1>
+        <p style="color:aquamarine" class="subtitle">Libertad, Innovación y Código Abierto</p>
+        <nav>
+            <ul>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#instalacion">Instalación</a></li>
+                <li><a href="#sitios">Recursos</a></li>
+                <li><a href="#razones">¿Por qué Fedora?</a></li>
+                <li><a href="#autores">Nosotros</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="historia" data-aos="fade-up">
+            <h2>Historia de Fedora</h2>
+            <p>Fedora es una distribución Linux patrocinada por Red Hat que ha evolucionado desde sus inicios como Fedora Core en 2003. A lo largo de los años, Fedora ha sido una plataforma importante para la innovación en el ecosistema de software libre, destacándose por adoptar tecnologías emergentes antes que muchas otras distribuciones.</p>
+        
+            <p><strong>Orígenes de Fedora:</strong> La historia de Fedora comienza en septiembre de 2003, cuando Red Hat decidió dividir su popular sistema operativo Red Hat Linux en dos ramas: Red Hat Enterprise Linux (RHEL), orientado al mercado empresarial, y Fedora, un proyecto comunitario enfocado en ofrecer las últimas tecnologías a los usuarios de escritorio y desarrolladores. El proyecto fue bautizado en honor al característico sombrero (Fedora) que aparece en el logo de Red Hat.</p>
+        
+            <p><strong>Primeras versiones:</strong></p>
+            <ul class="features-list">
+                <li><strong>Fedora Core 1 (2003):</strong> Basado en Red Hat Linux 9, fue la primera versión bajo el nuevo nombre y se destacó por ser una plataforma de desarrollo abierta y dinámica.</li>
+                <li><strong>Fedora Core 4 (2005):</strong> Introdujo GNOME 2.10, mejoras en el soporte de hardware y avances en SELinux (una tecnología de seguridad que aísla los procesos).</li>
+                <li><strong>Fedora 7 (2007):</strong> Simplificó la estructura del sistema eliminando la distinción entre Fedora Core y Fedora Extras, integrándolos en una sola distribución.</li>
+            </ul>
+            <p></p>
+            <p><strong>Evolución de Fedora:</strong></p>
+            <ul class="features-list">
+                <li><strong>Fedora 15 (2011):</strong> Fue la primera distribución en ofrecer GNOME 3, una nueva interfaz de usuario diseñada para mejorar la experiencia de usuario en el escritorio.</li>
+                <li><strong>Fedora 25 (2016):</strong> Introdujo el soporte para Wayland, un nuevo servidor gráfico que reemplaza al antiguo X.Org, prometiendo un mejor rendimiento gráfico y seguridad.</li>
+                <li><strong>Fedora 33 (2020):</strong> Cambió el sistema de archivos por defecto a Btrfs, mejorando la gestión de snapshots y optimizando el rendimiento.</li>
+            </ul>
+        
+            <p><strong>Fedora Workstation 40:</strong></p>
+            <p>La versión actual, Fedora Workstation 40, fue lanzada en 2024. Es parte de la rama "Workstation", diseñada especialmente para usuarios de escritorio, desarrolladores y profesionales creativos. Fedora Workstation se destaca por incluir las últimas versiones de GNOME, soporte para desarrolladores y un enfoque en la facilidad de uso.</p>
+        
+            <ul class="features-list">
+                <li><strong>Año de lanzamiento:</strong> 2024</li>
+                <li><strong>GNOME 44:</strong> Ofrece una interfaz más pulida con nuevas mejoras en la personalización de escritorios, soporte mejorado para dispositivos de entrada y nuevas funcionalidades para las ventanas.</li>
+                <li><strong>Mejoras en rendimiento:</strong> Incluye optimización en sistemas con discos SSD y mejor soporte para hardware moderno.</li>
+                <li><strong>Herramientas de desarrollo avanzadas:</strong> Se ha actualizado el conjunto de herramientas de desarrollo, incluidas nuevas versiones de lenguajes como Python, GCC y Rust.</li>
+                <li><strong>Seguridad mejorada:</strong> Fedora sigue perfeccionando tecnologías como SELinux y el aislamiento de procesos.</li>
+            </ul>
+        
+            <p>Fedora sigue siendo un referente para usuarios que buscan un sistema operativo estable, seguro y siempre a la vanguardia de las últimas tecnologías.</p>
+        </section>
+        
+
+        <section id="instalacion" data-aos="fade-up">
+            <h2>Instalación y Configuración</h2>
+            <p>El proceso de instalación de Fedora Workstation 40 en VirtualBox es sencillo y directo. A continuación, te detallamos los pasos y configuraciones utilizados para instalar Fedora en una máquina virtual.</p>
+        
+            <div class="video-container" data-aos="zoom-in">
+                <iframe
+                    width="100%"
+                    height="315"
+                    src="https://www.youtube.com/embed/utaABSpZ6Jo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        
+            <h3>Configuración de la Máquina Virtual:</h3>
+            <ul class="features-list">
+                <li><strong>Memoria RAM:</strong> 2GB</li>
+                <li><strong>Procesadores:</strong> 2 núcleos</li>
+                <li><strong>Tipo de sistema:</strong> Linux</li>
+                <li><strong>Versión:</strong> Fedora (64-bit)</li>
+                <li><strong>Almacenamiento recomendado:</strong> 20GB mínimo</li>
+            </ul>
+            <p></p>
+            <h3>Proceso de Instalación:</h3>
+            <ol class="features-list">
+                <li>Descargamos la ISO de Fedora Workstation 40 desde la página oficial (<a href="https://getfedora.org" target="_blank">getfedora.org</a>).</li>
+                <li>Creamos una nueva máquina virtual en VirtualBox.</li>
+                <li>En la configuración de la VM, seleccionamos la ISO descargada.</li>
+                <li>Iniciamos la máquina virtual y comenzamos la instalación.</li>
+                <li>Seleccionamos el idioma español.</li>
+                <li>En el menú de instalación, configuramos:
+                    <ul class="features-list">
+                        <li>Particionamiento automático</li>
+                        <li>Zona horaria local</li>
+                        <li>Teclado en español</li>
+                    </ul>
+                </li>
+                <li>Creamos un usuario y contraseña.</li>
+                <li>Esperamos que termine la instalación y reiniciamos.</li>
+            </ol>
+            <p></p>
+      
+            <h3>Tips para mejor rendimiento:</h3>
+            <ul class="features-list">
+                <li>Habilitar la aceleración por hardware en VirtualBox.</li>
+                <li>Activar el portapapeles bidireccional para facilitar copiar/pegar.</li>
+                <li>Instalar las Guest Additions para mejor rendimiento gráfico.</li>
+                <li>Actualizar el sistema después de la instalación:
+                    <pre><code>sudo dnf update</code></pre>
+                </li>
+            </ul>
+        </section>
+        
+
+        <section id="sitios" data-aos="fade-up">
+            <h2>Recursos y Comunidad</h2>
+            <div class="links-container">
+                <a href="https://getfedora.org" target="_blank" class="minimal-link">
+                    <span class="link-text">Página Oficial</span>
+                    <span class="link-description">Descarga e información oficial de Fedora</span>
+                </a>
+                <a href="https://fedoraproject.org/wiki/Fedora" target="_blank" class="minimal-link">
+                    <span class="link-text">Wiki Oficial</span>
+                    <span class="link-description">Documentación completa y guías detalladas</span>
+                </a>
+                <a href="https://forums.fedoraforum.org" target="_blank" class="minimal-link">
+                    <span class="link-text">Foros</span>
+                    <span class="link-description">Comunidad activa y soporte técnico</span>
+                </a>
+                <a href="https://fedoramagazine.org" target="_blank" class="minimal-link">
+                    <span class="link-text">Fedora Magazine</span>
+                    <span class="link-description">Noticias y artículos técnicos</span>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section id="razones" data-aos="fade-up">
+            <h2>¿Por qué elegir Fedora?</h2>
+            <p>Fedora destaca en el panorama de las distribuciones Linux por múltiples razones fundamentales. En primer lugar, su compromiso inquebrantable con el software libre y los estándares abiertos garantiza que los usuarios siempre tengan acceso a las últimas innovaciones tecnológicas sin comprometer sus libertades digitales. El proyecto mantiene una política estricta de incluir solo software libre, lo que asegura la transparencia y la capacidad de los usuarios para examinar y modificar cualquier aspecto del sistema.</p>
+            
+            <p>En el ámbito del desarrollo, Fedora sobresale como la plataforma preferida por desarrolladores y profesionales de TI. Ofrece herramientas de desarrollo actualizadas, entornos de contenedores nativos y soporte para las últimas tecnologías de virtualización. La integración de herramientas como Toolbox facilita la creación de entornos de desarrollo aislados, mientras que la implementación de tecnologías como Flatpak y RPM provee múltiples opciones para la distribución de software.</p>
+            
+            <p>La seguridad es otro pilar fundamental de Fedora. El sistema implementa SELinux por defecto, ofrece actualizaciones de seguridad rápidas y mantiene un enfoque proactivo hacia la protección del usuario. Además, Fedora sirve como campo de pruebas para muchas tecnologías que eventualmente se incorporan en Red Hat Enterprise Linux, lo que significa que los usuarios de Fedora tienen acceso temprano a innovaciones que más tarde se convertirán en estándar en el mundo empresarial.</p>
+        </section>
+
+        <section id="autores" data-aos="fade-up">
+            <h2>Nosotros</h2>
+            <div class="author-list">
+                <div class="author-card">
+                    <img src=".\img\guille.jpg" alt="Foto del autor 1" class="author-photo">
+                    <div class="author-info">
+                        <h3>Guillermo Hernández</h3>
+                        <p>Desarrollador Frontend</p>
+                        <a href="mailto:hernandezquirozguillermo2@gmail.com">hernandezquirozguillermo2@gmail.com</a>
+                    </div>
+                </div>
+                <div class="author-card">
+                    <img src=".\img\nidia.jpg" alt="Foto del autor 2" class="author-photo">
+                    <div class="author-info">
+                        <h3>Nidia Muñoz</h3>
+                        <p>Desarrollador Backend</p>
+                        <a href="mailto:munoznidiia2430@gmail.com">munoznidiia2430@gmail.com</a><br>
+                    </div>
+                </div>
+                <div class="author-card">
+                    <img src=".\img\marily.jpg" alt="Foto del autor 3" class="author-photo">
+                    <div class="author-info">
+                        <h3>Marily Botina</h3>
+                        <p>Administrador de proyectos</p>
+                        <a href="mailto:marilybotina55@gmail.com">marilybotina55@gmail.com</a><br>
+                    </div>
+                </div>
+                <div class="author-card">
+                    <img src=".\img\alejo.jpg" alt="Foto del autor 4" class="author-photo">
+                    <div class="author-info">
+                        <h3>Alejandro Rosero</h3>
+                        <p>Administrador de proyectos</p>
+                        <a href="mailto:marcorosero98@gmail.com">marcorosero98@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <section id="comentarios" data-aos="fade-up">
+            <h2>Fuentes y Comentarios</h2>
+        
+            <!-- Fuentes de Información -->
+            <div class="sources-container">
+                <h3>Fuentes de Información</h3>
+                <div class="sources-grid">
+                    <a href="https://docs.fedoraproject.org/" class="source-card">
+                        <h4>Documentación Oficial de Fedora</h4>
+                        <p>Documentación técnica y guías oficiales</p>
+                    </a>
+                    <a href="https://www.redhat.com/" class="source-card">
+                        <h4>Red Hat</h4>
+                        <p>Información corporativa y desarrollo</p>
+                    </a>
+                    <a href="https://fedoraproject.org/wiki/Repositories" class="source-card">
+                        <h4>Documentación de Repositorios</h4>
+                        <p>Información técnica sobre paquetes</p>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Sistema de Comentarios -->
+            <div class="comments-section">
+                <h3>Zona de Comentarios</h3>
+                <form class="comment-form" id="commentForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Publicar Comentario</button>
+                </form>
+        
+                <!-- Lista de Comentarios Publicados -->
+                <div id="commentList" class="comment-list">
+                    <!-- Los comentarios aparecerán aquí -->
+                </div>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fedora Project. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
+
+<script>
+    // Selecciona el formulario y la lista de comentarios
+    const commentForm = document.getElementById('commentForm');
+    const commentList = document.getElementById('commentList');
+
+    // Agrega un evento para manejar el envío del formulario
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Obtén los valores de los campos de entrada
+        const nombre = document.getElementById('nombre').value;
+        const comentario = document.getElementById('comentario').value;
+
+        // Crea un nuevo elemento de comentario
+        const commentItem = document.createElement('div');
+        commentItem.classList.add('comment-item');
+        commentItem.innerHTML = `
+            <h4>${nombre}</h4>
+            <p>${comentario}</p>
+        `;
+
+        // Agrega el nuevo comentario a la lista
+        commentList.appendChild(commentItem);
+
+        // Limpia el formulario
+        commentForm.reset();
+    });
+</script>
