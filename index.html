@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+     <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 <body>
     <header class="fade-in">
@@ -254,7 +257,12 @@
 </body>
 </html>
 
-<script>
+<script type="text/javascript">
+    // Inicializa EmailJS con tu User ID
+    (function(){
+        emailjs.init("qcOSWPL2yTAr_zqoF");  // Reemplaza "TU_USER_ID" por el User ID de EmailJS
+    })();
+
     // Selecciona el formulario y la lista de comentarios
     const commentForm = document.getElementById('commentForm');
     const commentList = document.getElementById('commentList');
@@ -265,6 +273,7 @@
 
         // Obtén los valores de los campos de entrada
         const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
         const comentario = document.getElementById('comentario').value;
 
         // Crea un nuevo elemento de comentario
@@ -274,11 +283,22 @@
             <h4>${nombre}</h4>
             <p>${comentario}</p>
         `;
+        commentList.appendChild(commentItem); // Agrega el nuevo comentario a la lista
+        commentForm.reset();  // Limpia el formulario
 
-        // Agrega el nuevo comentario a la lista
-        commentList.appendChild(commentItem);
+        // Configura los parámetros para enviar el correo con EmailJS
+        const templateParams = {
+            nombre: nombre,
+            email: email,
+            comentario: comentario
+        };
 
-        // Limpia el formulario
-        commentForm.reset();
+        // Usa EmailJS para enviar el correo
+        emailjs.send("service_t8xtv8p", "template_8mxbngw", templateParams)
+            .then(function(response) {
+                console.log("Correo enviado con éxito!", response.status, response.text);
+            }, function(error) {
+                console.error("Hubo un error al enviar el correo:", error);
+            });
     });
 </script>
